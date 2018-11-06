@@ -1,7 +1,31 @@
 <!-- templates/home.html -->
-<h1>Message board homepage</h1>
+<head>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<style>
+body {
+background-color: lightblue;
+margin-left: 80px;
+}
+h1 {
+font-family: 'Spicy Rice', cursive;
+font-size: 60px;
+
+}
+ul {
+font-family: 'Indie Flower', cursive;
+font-size: 40px;
+
+}
+
+</style>
+</head>
+<h1>Tanner's Message board homepage!</h1>
 <ul>
   {% for post in all_posts_list %}
     <li>{{ post.text }}</li>
   {% endfor %}
 </ul>
+
